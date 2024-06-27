@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="readyplaceorder.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="product_container" id="product_container">
+        <h1>Review items</h1>
+        <div class="products"></div>
+      </div>
+      <div class="address_container">
+        <div class="address_heading-div">
+          <h2 class="address_heading">SHIPPING ADDRESS</h2>
+        </div>
+        <div class="address_content-div">
+          <h3 class="adress_content" id="adress_content"></h3>
+        </div>
+        <div class="divsummray">
+          <h2 class="address_heading">PLACE YOUR ORDER</h2>
+        </div>
+      </div>
+      <div class="summary_container">
+        <div class="summdiv">
+          <form action="/placeorderready" method="post">
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              class="email"
+              name="emails"
+            />
+            <div class="summary_heading">
+              <h2>TOTAL SUMMARY</h2>
+            </div>
+            <div class="items">
+              <h3>Items:</h3>
+              <h3>Rs:<span class="cost" id="cost"></span></h3>
+            </div>
+            <div class="delivery">
+              <h3>Delivery:</h3>
+              <h3>Rs:<span class="cost_delivery" id="cost_delivery"></span></h3>
+            </div>
+            <div class="total">
+              <h3>Total:</h3>
+              <h3>Rs:<span class="total_cost" id="total_cost"></span></h3>
+            </div>
+            <div class="btnplaceorder">
+              <button class="btn" title="submit">PLACE YOUR ORDER</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="readyplaceorder.js"></script>
+  </body>
+</html>
