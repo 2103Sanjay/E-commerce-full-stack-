@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="redaypayment.css" />
+  </head>
+  <body>
+    <h1 class="overall_heading">CHECKOUT</h1>
+    <div class="container">
+      <div class="address_container">
+        <div class="add_heading">
+          <h2 class="heading_address">ADD YOUR BILLING ADDRESS</h2>
+        </div>
+        <div class="add_name">
+          <input type="text" placeholder="Name" id="username" class="input" />
+        </div>
+        <div class="add_mobile">
+          <input
+            type="tel"
+            placeholder="10-digit mobile number"
+            id="mobile"
+            class="input"
+            required
+          />
+        </div>
+        <div class="add_pincode">
+          <input
+            type="text"
+            placeholder="Pincode"
+            id="pincode"
+            class="input"
+            required
+          />
+        </div>
+        <div class="add_locality">
+          <input
+            type="text"
+            placeholder="Locality"
+            id="locality"
+            class="input"
+            required
+          />
+        </div>
+        <div class="address_full">
+          <input
+            type="text"
+            placeholder="Address"
+            id="addressfull"
+            class="input"
+            required
+          />
+        </div>
+        <div class="add_city">
+          <input
+            type="text"
+            placeholder="City/District/Town"
+            id="city"
+            class="input"
+            required
+          />
+        </div>
+        <div class="add_state">
+          <input
+            type="text"
+            placeholder="State"
+            id="state"
+            class="input"
+            required
+          />
+        </div>
+        <div class="add_landmark">
+          <input
+            type="text"
+            placeholder="Landmark(optional)"
+            class="input"
+            id="landmark"
+          />
+        </div>
+        <div class="add_alternephone">
+          <input
+            type="tel"
+            placeholder="Alternate Phone(Optional)"
+            class="input"
+            id="alternatephone"
+          />
+        </div>
+        <div class="btn_address">
+          <button class="btn_save" onclick="addressData()">SAVE ADDRESS</button>
+        </div>
+      </div>
+      <div class="payment_container">
+        <div class="payment_heading">
+          <h2 class="payment_head">SELECT A PAYMENT METHOD</h2>
+        </div>
+        <div class="cod flex_row">
+          <label class="cod_lable" for="cod"
+            >Cash On Delivery/Pay On Delivery</label
+          >
+          <input type="radio" name="payment" id="cod" class="cod_input" />
+        </div>
+        <div class="gpay flex_row">
+          <label for="gpay" class="gpay_lable">Google Pay</label>
+          <input type="radio" name="payment" id="gpay" />
+        </div>
+        <div class="phonepe flex_row">
+          <label for="phonepe" class="phonepe_lable">Phone Pe</label>
+          <input type="radio" name="payment" id="phonepe" />
+        </div>
+        <div class="paytm flex_row">
+          <label for="paytm" class="paytm_lable">Paytm</label>
+          <input type="radio" name="payment" id="paytm" />
+        </div>
+        <div class="btn_continue flex_row">
+          <a href="/makepaymentready">
+            <button class="btn_delivery">CONTINUE</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="readypayment.js"></script>
+  </body>
+</html>

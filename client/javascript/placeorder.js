@@ -1,0 +1,20 @@
+var confirmedWood = localStorage.getItem("confirmedWood");
+var confirmedColor = localStorage.getItem("confirmedColor");
+var confirmedCloth = localStorage.getItem("confirmedCloth");
+var confirmedCapacity = localStorage.getItem("confirmedCapacity");
+var username = localStorage.getItem("username");
+var mobile = localStorage.getItem("mobile");
+var pincode = localStorage.getItem("pincode");
+var locality = localStorage.getItem("locality");
+var addressfull = localStorage.getItem("addressfull");
+var city = localStorage.getItem("city");
+var state = localStorage.getItem("state");
+var landmark = localStorage.getItem("landmark");
+var alternatephone = localStorage.getItem("alternatephone");
+
+var address = document.getElementById("address");
+address.innerHTML = `${username}<br>${addressfull}<br>${city},${state},${pincode}<br>Phone Number:${mobile}`;
+var sofaname = document.getElementById("sofa_name");
+sofaname.innerHTML = `Emily Fabric ${confirmedCapacity} Sofa - ${confirmedColor}`;
+var sofa_img = document.getElementById("sofa_img");
+sofa_img.src = `final${confirmedColor}${confirmedCapacity}.jpg`;

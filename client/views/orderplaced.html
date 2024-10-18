@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Video</title>
+    <link rel="stylesheet" href="orderplaced.css" />
+  </head>
+  <body>
+    <!-- Video Background -->
+    <div id="video-background">
+      <video autoplay loop muted playsinline>
+        <source src="3011374-uhd_3840_2160_24fps.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h1>ORDER PLACED</h1>
+      <h2>
+        "Shop & Sow: Sprout Joy with Every Purchase - Let's Green the World
+        Together!" 🌍🌳🛍️
+      </h2>
+      <form action="/placeorder" method="post">
+        <input
+          type="email"
+          placeholder="Email"
+          required
+          class="email"
+          name="email"
+        /><br />
+        <button type="submit" class="btn">GET VERIFICATION MAIL</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(11, 60px);
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f5faff9e;
+  z-index: 5;
+}
+.marquee {
+  z-index: 700000000;
+  font-size: 40px;
+  margin-top: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: green;
+}
+.address_heading {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-content: center;
+  background-color: #2874f0;
+  padding: 10px;
+  color: white;
+  z-index: 1;
+}
+.shipping_address {
+  grid-row: 2/4;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.product_img {
+  grid-row: 4/7;
+  grid-column: 1/2;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  align-self: center;
+  justify-content: center;
+}
+.sofa_img {
+  width: 100%;
+  height: auto;
+}
+.product_name {
+  grid-row: 4/7;
+  grid-column: 2/5;
+  align-self: center;
+  justify-content: center;
+}
+.sofa_name {
+  text-transform: capitalize;
+  text-align: center;
+}
+.total_heading {
+  grid-row: 7/8;
+  grid-column: 1/-1;
+  align-self: center;
+  justify-content: center;
+  background-color: #2874f0;
+  color: white;
+  padding: 10px;
+}
+.item_lable {
+  grid-row: 8/9;
+  grid-column: 1/4;
+  align-self: center;
+  justify-content: center;
+}
+.item_cost {
+  grid-row: 8/9;
+  grid-column: 4/-1;
+  align-self: center;
+  justify-content: center;
+  text-align: end;
+}
+.delivery_lable {
+  grid-row: 9/10;
+  grid-column: 1/4;
+  align-self: center;
+  justify-content: center;
+}
+.delivery_cost {
+  grid-row: 9/10;
+  grid-column: 4/-1;
+  align-self: center;
+  justify-content: center;
+  text-align: end;
+}
+.total_lable {
+  grid-row: 10/11;
+  grid-column: 1/4;
+  align-self: center;
+  justify-content: center;
+}
+.total_cost {
+  grid-row: 10/11;
+  grid-column: 4/-1;
+  align-self: center;
+  justify-content: center;
+  text-align: end;
+}
+.btn_placeorder {
+  grid-row: 11/12;
+  grid-column: 1/-1;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+}
+.btn_payandorder {
+  padding: 20px;
+  width: 100%;
+  background-color: #fb641b;
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.address {
+  text-transform: capitalize;
+}
+
+/* CSS to style the video */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.499);
+  z-index: 2;
+}
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.email {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  border-bottom: 1px solid #2874f0;
+  font-size: 15px;
+}
+.email::placeholder {
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+}
+.email input:focus {
+  border: none;
+  border-bottom: 1px solid #2874f0;
+}

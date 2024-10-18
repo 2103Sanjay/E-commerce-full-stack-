@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body class="background" id="background">
+    <div class="background" id="backgroung">
+      <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form action="login.html" class="signup-form" method="post">
+          <div class="form-group">
+            <input type="text" id="fullname" name="fullname" required />
+            <label for="fullname">Full Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" name="password" required />
+            <label for="password">Password</label>
+          </div>
+          <button class="ripple" type="submit">Sign Up</button>
+        </form>
+        <div class="bottom-text">
+          <span>Already have an account?</span> <a href="login">Login</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const labels = document.querySelectorAll(".form-group label");
+
+      labels.forEach((label) => {
+        label.innerHTML = label.innerText
+          .split("")
+          .map(
+            (letter, idx) =>
+              `<span style="transition-delay:${idx * 55}ms">${letter}</span>`
+          )
+          .join("");
+      });
+
+      const buttons = document.querySelectorAll(".ripple");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+          const x = e.pageX;
+          const y = e.pageY;
+
+          const buttonTop = e.target.offsetTop;
+          const buttonLeft = e.target.offsetLeft;
+
+          const xInside = x - buttonLeft;
+          const yInside = y - buttonTop;
+
+          const circle = document.createElement("span");
+          circle.classList.add("circle");
+          circle.style.top = yInside + "px";
+          circle.style.left = xInside + "px";
+
+          this.appendChild(circle);
+
+          setTimeout(() => circle.remove(), 500);
+        });
+      });
+    </script>
+  </body>
+</html>
